@@ -1,0 +1,219 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+#logo{
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.items{
+    padding-right: 90px;
+    font-size:20px;
+}
+
+#navitem1{
+    color:#fff;
+   font-family: "Roboto", sans-serif;
+}
+
+#navitem2{
+    color:#fff;
+    font-family: "Roboto", sans-serif;
+}
+
+#navitem3{
+    color:#fff;
+    font-family: "Roboto", sans-serif;
+}
+
+#navitem4{
+    color:#fff;
+    font-family:"Roboto", sans-serif;
+}
+
+#nav-color{
+    background-color: #270082;
+}
+
+.banner-section-bg-container{
+    background-image: url(images/hero_image.png);
+    height:100vh;
+    background-size: cover;
+    color: #fff;
+    font-family:"Roboto", sans-serif;
+    text-align: center;
+    padding: 90px;
+}
+
+.heading1{
+    padding: 10px;
+    font-size: 96px;
+    font-family:"Roboto", sans-serif;
+} 
+ 
+.heading2{
+    padding: 30px;
+    font-size: 32px;
+    font-family:"Roboto", sans-serif;
+}
+
+.paragraph{
+    font-size: 18px;
+    font-family:"Roboto", sans-serif;
+}
+
+.music-section{
+    text-align: center;
+    padding-top: 50px;
+    background-color:#281154;
+    color:#fff;
+    padding: 40px;
+    scroll-margin: 50px;
+}
+
+.music-heading{
+    padding-bottom: 30px;
+    font-family:"Roboto", sans-serif;
+}
+
+
+.music-heading2{
+    padding-bottom: 30px;
+    font-family:"Roboto", sans-serif;
+}
+
+
+.music-paragraph{
+    padding: 30px;
+    font-family:"Roboto", sans-serif;
+}
+
+.ipad-iphone-img {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+  }
+
+  /* button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: #dc0000 ;
+    color: white;
+    opacity: 0.8;
+  } */
+
+  .primary-btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: #dc0000 ;
+    color: white;
+    border-width: 0;
+    transition: 0.2sec ease-in-out;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .primary-btn:hover{
+    transition: 0.2sec ease-in-out;
+    transform: scale(1.04);
+    opacity: 0.8;
+  }
+  .secondary-btn:hover{
+    transition: 0.2sec ease-in-out;
+    transform: scale(1.04);
+    opacity: 0.8;
+  }
+
+  .secondary-btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: #270082;
+    color: white;
+    border-width: 0;
+    transition: 0.2sec ease-in-out;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+.about-music{
+    padding-top: 500px;
+    text-align: center;
+}
+
+.mac-img{
+    margin-top: 40px;
+}
+
+.video-section {
+    background-image: url(images/video.png);
+    min-height:800px;
+    color: white;
+    text-align: center; 
+    background-size: cover;
+    scroll-margin:50px;
+}
+
+.video-heading{
+    padding-bottom: 30px;
+}
+
+.gift-section{
+  margin:100px;
+  scroll-margin: 120px;
+}
+
+.gift-heading{
+    font-family:"Roboto", sans-serif;
+}
+
+.gift-paragraph{
+    font-family:"Roboto", sans-serif;
+}
+.gift-content{
+   padding-left:50px; 
+   font-family:"Roboto", sans-serif;
+}
+
+.footer-links-1{
+   margin:40px;
+}
+
+.footer-section{
+    background-color: #281154;
+    color:#fff;
+}
+
+.footer-heading{
+    font-family:"Roboto", sans-serif;
+    font-size: 30px;
+}
+
+.footer-lower{
+    background-color:#270082 ;
+    padding: 10px;
+    color: white;
+}
+
+.list{
+    list-style-type: none;
+    font-family:"Roboto", sans-serif;
+}
+
+.footer-heading{
+    font-family:"Roboto", sans-serif;
+}
