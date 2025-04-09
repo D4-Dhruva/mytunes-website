@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
@@ -39,12 +39,18 @@
     <div class="banner-section-bg-container d-flex flex-column justify-content-center">
         <div class="bg-container ">
             <h1 class="heading1">myTunes</h1>
-            <h3 class="heading2">Your music,movies,and TV shows take center stage.</h3>
+            <h3 class="heading2">Your music, movies, and TV shows take center stage.</h3>
             <p class="paragraph">MyTunes is your all-in-one entertainment hub. Whether you’re vibing to the latest tracks, exploring new movies, or diving into binge-worthy shows, we’ve got you covered 24/7.
              Explore the latest hits, timeless classics, and exclusive content from movies and TV shows. With MyTunes, you're not just listening—you’re experiencing entertainment like never before.
             </p>
+            <!-- Search Bar Section -->
+    <div class="search-bar-container">
+        <input type="text" class="search-input" placeholder="Search for music or prodcasts...">
+        <button class="search-btn">Search</button>
+    </div>
         </div>
     </div>
+
 
     <div class="music-section d-flex flex-column justify-content-center" id="music">
         <div class="music-container">
@@ -92,12 +98,10 @@
         <div class="container">
           <h3 class="video-heading">A world of entertainment. Available wherever you are.</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo
-            non velit repellat alias saepe inventore repellendus? Molestias
-            suscipit eos tempora? Quae quaerat cumque in veritatis impedit
-            dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi
-            totam ad quas? Ipsam laudantium soluta delectus!
+            Discover a universe of music at your fingertips. From chart-topping hits to timeless classics, 
+                    explore millions of tracks that resonate with your soul. Whether you're creating playlists, 
+                    streaming live performances, or enjoying exclusive content, let the rhythm of music follow you 
+                    wherever you go. Experience the joy of music, anytime, anywhere.
           </p>
         </div>
       </section>
@@ -110,11 +114,9 @@
             <h1 class="gift-heading">
                 Gift-card
             </h1>
-            <p class="gift-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, itaque nisi.
-                Illum atque dolores sit debitis vel consequuntur itaque tempore suscipit sint 
-                quod harum adipisci doloribus cupiditate facilis facere natus nihil eaque corporis,
-                quae hic! Magni atque reiciendis quia voluptas excepturi similique, necessitatibus
-                odio itaque commodi qui. Earum, molestiae similique!
+            <p class="gift-paragraph"> Give the gift of music with the Orange MyTunes Music Gift Card. Whether it's for a birthday, holiday, or just because, 
+                let your loved ones explore millions of songs, create playlists, and enjoy exclusive content. It's the perfect way to 
+                share the joy of music with friends and family.
             </p>
             <p class="gift-paragraph">Already have an Orange MyTunes Music Gift Card?</p>
         <hr/>
@@ -208,16 +210,19 @@
         <div class="control">
             <div class="control-part">
                 <div class="control-icon">
-                    <img src="./images2/control1.png" class="con">
-                    <img src="./images2/control2.png" class="con">
+                    <!-- <img src="./images2/control1.png" class="con"> -->
+                    <i class="fa fa-microphone" class="con"></i>
+                    <i class="fa fa-video" class="con"></i>
+                    <i class="fa-solid fa-bars" class="con"></i>
+                    <!-- <img src="./images2/control2.png" class="con">
                     <img src="./images2/control3.png" class="con">
-                    <img src="./images2/control4.png"class="con">
+                    <img src="./images2/control4.png"class="con"> -->
                 </div>
               
-                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-volume-high" class="con"></i>
                 <div class="vol-bar">
                     <input class="volume-bar" type="range" min="0" max="100">
-                    <img src="./images2/control5.png" class="con" id="screen">
+                    <i class="fa-solid fa-expand"></i>
                 </div>
                 
                 <i class="fa-solid fa-up-right-and-down-left-from-center" id="expand"></i>

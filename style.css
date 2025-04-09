@@ -10,6 +10,11 @@ html,body{
     scroll-behavior: smooth;
 }
 
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #logo{
     font-size: 32px;
     font-weight: 800;
@@ -220,11 +225,17 @@ html,body{
 
 
 .music-player{
-    background-color: rgb(37, 21, 93);
+    background-color: #1f1f1f;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
 
 a{
@@ -408,46 +419,57 @@ flex-wrap: wrap;
 }
 
 .album{
+    display: flex;
+    align-items: center;
     width: 25%;
-    /* background-color: pink; */
 }
 
 .player{
     width: 50%;
-    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .control{
     width: 25%;
-    /* background-color: green; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .player-controls{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .player-control-icon{
-    height: 1rem;
-    margin-left: 1.75rem;
+    height: 20px;
+    margin: 0 10px;
     opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .player-control-icon:hover{
     opacity: 1;
+    transform: scale(1.2);
 }
 
 .playback-bar{
-    justify-content: center;
     display: flex;
     align-items: center;
+    width: 80%;
 }
 
 .progress-bar{
-    width: 70%;
+    flex: 1;
     appearance: none;
-    background-color: transparent;
+    background-color: #444;
+    height: 5px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -459,44 +481,59 @@ flex-wrap: wrap;
 
 .progress-bar::-webkit-slider-thumb{
     appearance: none;
-    width: 1rem;
-    height: 1rem;
+    width: 10px;
+    height: 10px;
     background-color: #1bd760;
     border-radius: 50%;
-    margin-top: -6px;
+    cursor: pointer;
 }
 
 .album-control{
     display: flex;
+    align-items: center;
 }
 
 .album-control-icon{
-    height: 3.25rem;
-    margin-left: 0.2rem;
-    margin-top: 0.3rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.album-control-icon:hover{
+    transform: scale(1.1);
 }
 
 .album-control-para2{
-    opacity: 0.6;
+    font-size: 12px;
+    opacity: 0.7;
     margin-top: 0.2rem;
     font-size: 0.73rem;
     color: white;
 }
 
 .album-control-para1{
-    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
     margin-top: 1rem;
     color: white;
 }
+
 .album-control-para{
     margin-left: 0.8rem;
+    color: white;
 }
 
 .plus{
+    font-size: 20px;
+    color: white;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     height: 3rem;
     width: 3rem;
-    /* font-size: 2rem; */
-    color: white;
 }
 
 .plus i{
@@ -510,11 +547,14 @@ flex-wrap: wrap;
 
 .plus i:hover{
     opacity: 1;
+    transform: scale(1.2);
 }
 
 .control-part{
     display: flex;
+    align-items: center;
 }
+
 .con{
     margin-top: -11px;
     margin-bottom: 0;
@@ -526,19 +566,24 @@ flex-wrap: wrap;
 }
 
 .vol-bar{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
     width: 7.9rem;
     margin-left: 0.8rem;
     margin-top: 0.4rem;
 }
 
 .volume-bar{
+    width: 100px;
+    appearance: none;
+    background-color: #444;
+    height: 5px;
+    border-radius: 5px;
+    cursor: pointer;
     width: 5.2rem;
     margin-right: 0;
     height: 0.2rem;
-    appearance: none;
-    background-color: transparent;
-    cursor: pointer;
-    
 }
 
 .volume-bar::-webkit-slider-runnable-track{
@@ -549,10 +594,13 @@ flex-wrap: wrap;
 
 .volume-bar::-webkit-slider-thumb{
     appearance: none;
-    width: 1rem;
-    height: 1rem;
+    width: 10px;
+    height: 10px;
     background-color: #1bd760;
     border-radius: 50%;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
     margin-top: -6px;
 }
 
@@ -561,10 +609,25 @@ flex-wrap: wrap;
 }
 
 .control-part i{
+    font-size: 18px;
+    color: white;
+    opacity: 0.6;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     margin-left: 1rem;
     margin-top: 0.7rem;
     opacity: 0.4;
     color:white;
+}
+
+.control-part i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.con:hover{
+    opacity: 1;
 }
 
 #screen{
@@ -572,14 +635,99 @@ flex-wrap: wrap;
 }
 
 #expand{
+    font-size: 18px;
+    color: white;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     margin-top: 0.9rem;
     color: white;
 }
 
-.control-part i:hover{
+#expand:hover{
     opacity: 1;
+    transform: scale(1.2);
 }
 
-.con:hover{
-    opacity: 1;
+.nav-icon1{
+    margin: 10px;
+}
+
+/* Navbar Hover Effects */
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1bd760;
+}
+
+/* Button Hover Effects */
+.primary-btn,
+.secondary-btn {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Footer Links Hover Effects */
+.footer-links-1 ul li {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links-1 ul li:hover {
+    color: #1bd760;
+}
+
+/* Image Hover Effects */
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Search Bar Styles */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6c2db8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    background-color: #270232;
+    transform: scale(1.05);
 }
